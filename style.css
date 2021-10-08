@@ -1,0 +1,56 @@
+/* A no frills css reset. :) */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+.header-info{
+    background-color: red;
+    display: flex;
+    flex-direction: column;   
+}
+
+.header-img{
+    background-color: orange;
+}
+
+.info-section{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    border:3px solid red;
+}
+
+.info-section-gallery{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-section-image-box{
+    background-color: silver;
+}
+
+.testimonial-section{
+    background-color: blue;
+}
+
+.action-section{
+    background-color: purple;
+    display: flex;
+}
+
+.footer{
+    background-color: salmon;
+}
+
