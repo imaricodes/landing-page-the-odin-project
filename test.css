@@ -1,27 +1,25 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Heebo:ital,wght@0,200..900;1,200..900'); */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik,wght@0,200..900'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
+
+  }
+ 
+  *, *:before, *:after {
+    box-sizing: inherit;
   }
 
   html {
     
   }
-
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+.check{
+  width: 100%;
+  background-color: red;
+}
 
   body {
     display: flex;
@@ -32,25 +30,21 @@
     
   }
 
-  
-  
-  /* OTHER CSS */
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    align-items: center; 
   }
-  /* --Nav Bar-- */
+  /* -- NAV BAR -- */
 
-nav {
+.nav-section-wrapper {
     display: flex;
     background-color: #1f2937;
     justify-content: center;
     width: 100%;
-    padding-left:30px;
-    padding-right:30px;
+    /* padding-left:30px;
+    padding-right:30px; */
     
 }
 
@@ -63,6 +57,7 @@ nav {
     margin-bottom: 4rem;
     align-items: center;
     margin-top: 1rem;
+    padding: 0rem 4rem;
 }
 
 .right-nav-links {
@@ -88,7 +83,7 @@ ul {
       color: #e5e7eb;
   }
 
-  /* HEADER SECTION */
+  /* -- HEADER SECTION -- */
 
 .header-wrapper {
   display: flex;
@@ -96,6 +91,7 @@ ul {
   gap: 50px;
   width: 100%;
   background-color: #1f2937;
+  margin-bottom: 3rem;
     
 }
 
@@ -108,8 +104,7 @@ ul {
     gap: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5rem;   
-    
+    margin-bottom: 5rem;      
 }
 
 
@@ -121,46 +116,48 @@ ul {
   color: #f9fafb;
 }
 
-.hero-secondary-text {
+.header-hero-secondary-text {
   margin-bottom: 1rem;
 }
 
 .header-img-container{ 
    justify-content: center;
    align-items: center;
-   flex: 0 0 350px;
-    
+   flex: 0 0 350px;   
 }
 
 .header-image{
     width: 100%;
 }
 
+.hero-button {
+  background-color: #3882f6;
+  width: 80px;
+  padding: .5rem 0rem;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  }
 
 
-/* -- INFO SECTION--*/
+
+/* -- INFO SECTION -- */
 
 
-.info-section {  
-    /* background-color: tan; */
+.info-section-wrapper {  
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* max-width: 900px; */
-    /* flex: 1; */
     align-items: center;
-    
-
+    margin-bottom: 6.5rem;
 }
 
-.info-section-title {
-    /* background-color: yellow; */
-    font-family: heebo;
+.info-section-title { 
     display:flex;
     justify-content: center;
     max-width: 900px;
-    margin-bottom: 4rem;
-    
+    margin-bottom: 4rem;  
 }
 
 .info-section-gallery{
@@ -172,7 +169,6 @@ ul {
     font-weight: 600;
 }
 
-/* this contains an image and <p> text*/
 .info-section-image-box {
     
     display: flex;
@@ -180,28 +176,30 @@ ul {
     flex: 1 2 auto;
     max-width: 150px;
     text-align: center;
-    
+       
 }
 
 .info-section-img {
     max-width: 100%;
     border-radius: 10%;
     border: 3px solid#3882f6;
-    margin-bottom: .5rem;
+    margin-bottom: .5rem; 
     
+       
 } 
 
   
   /* -- TESTIMONIAL SECTION -- */
 
-  .testimonial-section {
+  .testimonial-section-wrapper {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 60px 0;   
+    padding: 60px 0;
+    margin-bottom: 3rem;   
 }
 
 .testimonial-wrapper{
@@ -219,18 +217,23 @@ ul {
 
 }
 
-/* -- CALL TO ACTION SECTION */
+p.testimonial-author:last-child {
+  margin-bottom: 0rem;
+}
 
-.action-section {
+/* -- CALL TO ACTION SECTION -- */
+
+.callToAction-section-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding: 0 100px;
+  margin-bottom: 3rem;
 
 }
 
-.action-box {
+.callToAction-box {
   flex: 0 2 800px;
   background-color: #3882f6;
   justify-content: center;
@@ -247,21 +250,20 @@ ul {
   
 }
 
-.action-box-left-text {
+.callToAction-box-left-text {
   display: flex;
   flex-direction: column;
-  
   flex: 0 1 500px;
   color: #e5e7eb;
 }
 
-.call-to-action-1{
+.callToAction-content-1{
 margin-bottom: .5rem;
 font-weight: 700;
 }
 
 
-.action-box-right-button {
+.callToAction-box-right-button {
   background-color: #3882f6;
   height: 30px;
   min-width:100px;
@@ -274,43 +276,43 @@ font-weight: 700;
 }
   
 
+/* -- FOOTER -- */
+
 .footer {
   background-color: #1f2937;
   color: #e5e7eb;
   text-align: center;
   padding: 20px 0px; 
   font-size: .75rem;
-
-
 }
 
 
-/* -- SHARED BOTTOM MARGIN */
-  
-.header-section, 
-.testimonial-section,
-.action-section {
-  margin-bottom: 3rem;
-
-}
-
-.info-section {
-  margin-bottom: 6.5rem;
-}
+/* -- CALL TO ACTION SECTION -- */
 
 
-/* -- FONT SETTINGS */
 
 
-.hero-main-text {
-/* font-family: 'Montserrat', sans-serif; */
+.action-box-right-button {
+  background-color: #3882f6;
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 7px;
+  border: 2px solid white;
+  font-weight: bold;
+  }
+
+
+
+/* -- FONT SETTINGS -- */
+
+
+.header-hero-main-text {
 font-weight: 700;
 font-size: 3rem;
 margin-bottom: .5rem;
 
 }
-.hero-secondary-text, .right-nav-links{
-  /* font-family: 'Montserrat', sans-serif; */
+.header-hero-secondary-text, .right-nav-links {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.75;
@@ -318,7 +320,6 @@ margin-bottom: .5rem;
 
 .header-logo-text {
   font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -330,43 +331,27 @@ margin-bottom: .5rem;
 
 .testimonial-text {
   font-weight: 300;
-  font-size: 1.5;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
   font-style: italic;
   line-height: 1.7;
-  max-width: 65ch;
-
-  
+  max-width: 65ch;  
   
 }
 
 .testimonial-author {
-  font-family: Montserrat, sans-serif;
   font-size: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
-  margin: 0 0 2rem 0;
+  margin-bottom: 2rem;
  
-
 }
 
-p.testimonial-author:last-child {
-  margin-bottom: 0rem;
-}
+
+
+
+
 
   
-  
-/* -- Buttons */
-
-.hero-button {
-background-color: #3882f6;
-width: 80px;
-height: 30px;
-color: white;
-border-radius: 7px;
-border: none;
-font-weight: bold;
-}
  
   
   
