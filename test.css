@@ -16,10 +16,6 @@
   html {
     
   }
-.check{
-  width: 100%;
-  background-color: red;
-}
 
   body {
     display: flex;
@@ -27,6 +23,7 @@
     height: 100vh;
     overflow: scroll;
     font-family: Montserrat, sans-serif;
+    color: #E5EBEB;
     
   }
 
@@ -75,12 +72,12 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    color: #e5e7eb;
+    
   } 
 
   a{
       text-decoration: none;
-      color: #e5e7eb;
+      color: #E5EBEB;
   }
 
   /* -- HEADER SECTION -- */
@@ -104,7 +101,8 @@ ul {
     gap: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5rem;      
+    margin-bottom: 5rem;
+         
 }
 
 
@@ -113,7 +111,7 @@ ul {
   flex-direction: column;
   flex: 1 0 auto;
   max-width: 500px;       
-  color: #f9fafb;
+  
 }
 
 .header-hero-secondary-text {
@@ -131,10 +129,9 @@ ul {
 }
 
 .hero-button {
-  background-color: #3882f6;
+  background-color: #0B5EE5;
   width: 80px;
   padding: .5rem 0rem;
-  color: white;
   border-radius: 7px;
   border: none;
   font-weight: bold;
@@ -151,6 +148,7 @@ ul {
     flex-direction: column;
     align-items: center;
     margin-bottom: 6.5rem;
+    color: rgb(63, 63, 63); 
     
 }
 
@@ -183,7 +181,6 @@ ul {
 .info-section-img {
     max-width: 100%;
     border-radius: 10%;
-    border: 3px solid#3882f6;
     margin-bottom: 1rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
           
@@ -199,9 +196,11 @@ ul {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 60px 0;
-    margin-bottom: 3rem;   
+    padding: 3.5rem;
+    margin-bottom: 6rem;
+    color: rgb(22, 22, 22);   
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
 }
 
 .testimonial-wrapper{
@@ -237,7 +236,7 @@ p.testimonial-author:last-child {
 
 .callToAction-box {
   flex: 0 2 800px;
-  background-color: #3882f6;
+  background-color: #0B5EE5;
   justify-content: center;
   align-items: center;
   gap: 30ppx;
@@ -248,15 +247,13 @@ p.testimonial-author:last-child {
   padding: 30px;
   flex-wrap: wrap;
   gap: 60px;
-  min-width: 469px;
-  
+  min-width: 469px; 
 }
 
 .callToAction-box-left-text {
   display: flex;
   flex-direction: column;
-  flex: 0 1 500px;
-  color: #e5e7eb;
+  flex: 0 1 500px; 
 }
 
 .callToAction-content-1{
@@ -266,15 +263,15 @@ font-weight: 700;
 
 
 .callToAction-box-right-button {
-  background-color: #3882f6;
+  background-color: #0B5EE5;
   height: 30px;
   min-width:100px;
-  color: white;
   border-radius: 7px;
   border: 2px solid white;
   font-weight: 300;
-  padding: 0px 20px;
-   
+  color: inherit;
+  font-family: inherit;
+  font-weight: 700;
 }
   
 
@@ -282,27 +279,11 @@ font-weight: 700;
 
 .footer {
   background-color: #1f2937;
-  color: #e5e7eb;
+  
   text-align: center;
   padding: 20px 0px; 
   font-size: .75rem;
 }
-
-
-/* -- CALL TO ACTION SECTION -- */
-
-
-
-
-.action-box-right-button {
-  background-color: #3882f6;
-  padding: .5rem 1rem;
-  color: white;
-  border-radius: 7px;
-  border: 2px solid white;
-  font-weight: bold;
-  }
-
 
 
 /* -- FONT SETTINGS -- */
@@ -336,8 +317,7 @@ margin-bottom: .5rem;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.7;
-  max-width: 65ch;  
-  
+  max-width: 65ch;    
 }
 
 .testimonial-author {
@@ -345,13 +325,10 @@ margin-bottom: .5rem;
   font-weight: 700;
   display: flex;
   margin-bottom: 2rem;
- 
 }
 
 
-.shadow {
-  
-}
+
 
 
 
