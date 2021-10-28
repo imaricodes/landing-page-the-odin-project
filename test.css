@@ -6,7 +6,6 @@
 *{
     margin: 0px;
     padding: 0px;
-
   }
  
   *, *:before, *:after {
@@ -39,10 +38,7 @@
     display: flex;
     background-color: #1f2937;
     justify-content: center;
-    width: 100%;
-    /* padding-left:30px;
-    padding-right:30px; */
-    
+    width: 100%;   
 }
 
 .link-container {
@@ -105,13 +101,11 @@ ul {
          
 }
 
-
 .header-info-container{
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
   max-width: 500px;       
-  
 }
 
 .header-hero-secondary-text {
@@ -287,6 +281,8 @@ font-weight: 700;
 
 
 /* -- FONT SETTINGS -- */
+
+/* optimize, reduce this code later? */
 
 
 .header-hero-main-text {
